@@ -10,10 +10,14 @@
   "scripts": {
     "docs:dev": "npx docsify serve docs",
     "docs:start": "npx docsify start docs",
-    "dev": "npx rollup --watch --config rollup.config.js"
+    "dev": "webpack --watch --progress --config config/webpack.config.dev.js"
   },
   "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
     "docsify-cli": "^4.4.1",
-    "rollup": "^2.28.1"
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.3.1",
+    "webpack-cli": "^4.1.0",
+    "webpack-merge": "^5.2.0"
   }
 }
