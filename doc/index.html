@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ivy-ui</title>
+        <link rel="stylesheet" href="./css/base.css" />
+    </head>
+    <body>
+        <header class="page-header"></header>
+        <main style="display: flex">
+            <aside class="page-aside">
+                <ul class="page-menu">
+                    <li class="page-menu-item">
+                        <a href="/">快速开始</a>
+                    </li>
+                    <li class="page-menu-item">主题自定义</li>
+                    <li class="page-menu-item">更新日志</li>
+                    <li class="page-menu-item">组件</li>
+                </ul>
+            </aside>
+            <main class="page-main">
+                <div>
+                    <div>
+                        <p>Timeline</p>
+                    </div>
+                    <div>
+                        <ivy-timeline>
+                            <ivy-timeline-item timestamp=""></ivy-timeline-item>
+                        </ivy-timeline>
+                    </div>
+                </div>
+            </main>
+        </main>
+    </body>
+    <script type="module" src="./js/base.js"></script>
+    <script type="module" src="../dist/ivy-ui.js"></script>
+</html>

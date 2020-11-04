@@ -11,19 +11,12 @@ const conf = merge(baseConf, {
     },
     devtool: "source-map",
     devServer: {
-        contentBase: join(__dirname, "../docs"),
+        contentBase: join(__dirname, "../doc"),
         index: "index.html",
         hot: true,
         host: "localhost",
         port: 9000,
     },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: resolve(__dirname, "../public") + "/index.html",
-            filename: resolve(__dirname, "../docs") + "/index.html",
-            title: "ivy-ui",
-        }),
-    ],
     watch: true,
     watchOptions: {
         poll: 1000, // 每秒检查一次变动

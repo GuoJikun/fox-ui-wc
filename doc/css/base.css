@@ -1,0 +1,63 @@
+body,
+ul,
+header,
+main,
+aside,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #409eff;
+    --color-success: #67c23a;
+    --color-warn: #e6a23c;
+    --color-danger: #f56c6c;
+    --color-info: #909399;
+    /*边框的颜色*/
+    --color-border: #dcdfe6;
+    /*主要文字的颜色*/
+    --color-text: #303133;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--color-primary, #409eff);
+    text-decoration: underline;
+}
+html {
+    font-size: 100px;
+}
+body {
+    font-size: 0.14rem;
+}
+.page-header {
+    height: 60px;
+    width: 100vw;
+    padding: 0 20px;
+}
+
+.page-aside {
+    width: 240px;
+    height: calc(100vh - 60px);
+}
+.page-menu {
+}
+.page-menu a {
+    display: block;
+}
+.page-menu-item {
+    line-height: 32px;
+    padding: 0 20px;
+}
+.page-main {
+    width: calc(100vw - 240px);
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
